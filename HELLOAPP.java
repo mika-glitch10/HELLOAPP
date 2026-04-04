@@ -1,25 +1,15 @@
-public class HelloApp {
+public class UC7 {
+        public static void main(String[] args) {
 
-    public static void main(String[] args) {
+            String names = "World";
 
-        StringBuilder names = new StringBuilder();
-
-        if (args.length == 0) {
-            System.out.println("Hello, World!");
-        } else {
-
-            boolean first = true;
-
-            for (String name : args) {
-                if (!first) {
-                    names.append(", ");
-                }
-                names.append(name);
-                first = false;
+            // If arguments are provided, join them with ", "
+            if (args.length > 0) {
+                names = String.join(", ", args);
             }
 
-            System.out.println("Hello, " + names.toString() + "!");
+            // Print the greeting
+            System.out.println("Hello, " + names + "!");
         }
     }
-}
 	
