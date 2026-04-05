@@ -1,4 +1,4 @@
-public class UC3.java {
+public class HELLOAPP {
 
     public static void main(String[] args) {
 
